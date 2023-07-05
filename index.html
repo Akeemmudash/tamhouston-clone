@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!--swiper js  -->
+
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.korzh.com/metroui/v4.5.1/css/metro-all.min.css"
+    /> -->
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Box Icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- SWIPER JS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <!-- Spinner CSS -->
+    <link rel="stylesheet" href="./assets/ispinner.css" />
+
+    <!-- MY CUSTOM CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="navbar bg-body-tertiary py-0 d-none">
+      <div class="container-fluid d-none d-lg-flex fw-bold">
+        <a class="my-link py-2 txt-green" href="#"
+          >World Wide Completely Free Returns and Free Shipping</a
+        >
+
+        <div class="region d-none d-lg-flex">
+          <div class="dropdown">
+            <a
+              class="dropdown-toggle my-link me-2 mydropdown txt-green fw-medium"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              English
+              <i class="fa-solid fa-angle-down"></i>
+            </a>
+            <ul class="dropdown-menu drop-menu">
+              <li>
+                <a class="dropdown-item border-bottom" href="#">English</a>
+              </li>
+              <li><a class="dropdown-item" href="#">Français</a></li>
+            </ul>
+          </div>
+          <div class="dropdown mydropdown">
+            <a
+              class="dropdown-toggle my-link txt-green fw-medium"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              USD
+              <i class="fa-solid fa-angle-down"></i>
+            </a>
+            <ul class="dropdown-menu drop-menu">
+              <li><a class="dropdown-item border-bottom" href="#">USR</a></li>
+              <li><a class="dropdown-item" href="#">EUR</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-bg" onclick="unActiveSearch()"></div>
+    <header class="navbar w-100 bg-pry py-2 top-0">
+      <div class="container-fluid flex-nowrap">
+        <div class="menu-toggle d-none">
+          <button
+            class="btn d-flex align-items-center justify-content-start outline-none px-0"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#menu-sm"
+            aria-controls="offcanvasExample"
+          >
+            <i class="bx bx-menu-alt-left"></i>
+          </button>
+        </div>
+
+        <a class="navbar-brand logo me-0" id="topnav-logo" href="#"
+          ><img
+            loading="eager"
+            decoding="sync"
+            fetchpriority="high"
+            src="https://i0.wp.com/tamhouston.com/wp-content/uploads/2022/06/TAM-LOGO-Remodel-02@2x.png?fit=2016%2C1108&amp;ssl=1"
+            class="attachment-full size-full"
+            alt=""
+            style="max-width: 70px"
+            srcset="
+              https://i0.wp.com/tamhouston.com/wp-content/uploads/2022/06/TAM-LOGO-Remodel-02@2x.png?w=2016&amp;ssl=1            2016w,
+              https://i0.wp.com/tamhouston.com/wp-content/uploads/2022/06/TAM-LOGO-Remodel-02@2x.png?resize=300%2C165&amp;ssl=1   300w,
+              https://i0.wp.com/tamhouston.com/wp-content/uploads/2022/06/TAM-LOGO-Remodel-02@2x.png?resize=1024%2C563&amp;ssl=1 1024w,
+              https://i0.wp.com/tamhouston.com/wp-content/uploads/2022/06/TAM-LOGO-Remodel-02@2x.png?resize=768%2C422&amp;ssl=1   768w,
+              https://i0.wp.com/tamhouston.com/wp-content/uploads/2022/06/TAM-LOGO-Remodel-02@2x.png?resize=1536%2C844&amp;ssl=1 1536w,
+              https://i0.wp.com/tamhouston.com/wp-content/uploads/2022/06/TAM-LOGO-Remodel-02@2x.png?resize=750%2C412&amp;ssl=1   750w,
+              https://i0.wp.com/tamhouston.com/wp-content/uploads/2022/06/TAM-LOGO-Remodel-02@2x.png?resize=55%2C30&amp;ssl=1      55w,
+              https://i0.wp.com/tamhouston.com/wp-content/uploads/2022/06/TAM-LOGO-Remodel-02@2x.png?resize=109%2C60&amp;ssl=1    109w,
+              https://i0.wp.com/tamhouston.com/wp-content/uploads/2022/06/TAM-LOGO-Remodel-02@2x.png?resize=900%2C495&amp;ssl=1   900w,
+              https://i0.wp.com/tamhouston.com/wp-content/uploads/2022/06/TAM-LOGO-Remodel-02@2x.png?resize=64%2C35&amp;ssl=1      64w
+            "
+            sizes="(max-width: 2016px) 100vw, 2016px"
+        /></a>
+        <div class="position-relative search-block">
+          <form
+            class="d-flex p-0 border-1 border rounded-2 my-sm-2 my-lg-0 overflow-hidden search-form"
+            role="search"
+            id="searchBox"
+          >
+            <input
+              class="form-control outline-none rounded-0 border-0 me-0 shadow-none search-input"
+              type="search"
+              id="main-search"
+              placeholder="Search Products"
+              aria-label="Search"
+              onfocus="activeSearch()"
+              onblur=" removeShadow()"
+            />
+            <div class="select-menu border-0 text-center" id="optionsMenu-lg">
+              <div
+                class="select-btn px-xl-3"
+                onclick="toggleClass()"
+                id="catplaceholder"
+              >
+                <span class="sBtn-text option-placeholder">All Categories</span>
+                <i class="fa-solid fa-angle-down fs-6 d-none d-xl-block"></i>
+              </div>
+              <ul class="options z-2" id="optionslist">
+                <h4 class="txt-green">Categories</h4>
+                <li class="option" value="">
+                  <div class="option-text">
+                    <label for="all-categories" class="radio-btn"
+                      ><input
+                        type="radio"
+                        class="radio-cat d-none"
+                        id="all-categories"
+                        name="category-radio"
+                        checked
+                      /><span>All Categories</span></label
+                    >
+                  </div>
+                </li>
+                <li class="option" value="">
+                  <div class="option-text">
+                    <label for="body-care" class="radio-btn"
+                      ><input
+                        type="radio"
+                        class="radio-cat d-none"
+                        id="body-care"
+                        name="category-radio"
+                      /><span>Body Care</span></label
+                    >
+                  </div>
+                </li>
+                <li class="option" value="">
+                  <div class="option-text">
+                    <label for="drinks" class="radio-btn"
+                      ><input
+                        type="radio"
+                        class="radio-cat d-none"
+                        id="drinks"
+                        name="category-radio"
+                      /><span>Drinks</span></label
+                    >
+                  </div>
+                </li>
+                <li class="option" value="">
+                  <div class="option-text">
+                    <label for="ethnic-delicacies" class="radio-btn"
+                      ><input
+                        type="radio"
+                        class="radio-cat d-none"
+                        id="ethnic-delicacies"
+                        name="category-radio"
+                      /><span> Ethnic Delicacies</span>
+                    </label>
+                  </div>
+                </li>
+                <li class="option" value="">
+                  <div class="option-text">
+                    <label for="fish&seafood" class="radio-btn"
+                      ><input
+                        type="radio"
+                        class="radio-cat d-none"
+                        id="fish&seafood"
+                        name="category-radio"
+                      /><span>Fish & Seafood</span></label
+                    >
+                  </div>
+                </li>
+                <li class="option" value="">
+                  <div class="option-text">
+                    <label for="flour" class="radio-btn"
+                      ><input
+                        type="radio"
+                        class="radio-cat d-none"
+                        id="flour"
+                        name="category-radio"
+                      /><span>Flour</span></label
+                    >
+                  </div>
+                </li>
+                <li class="option" value="">
+                  <div class="option-text">
+                    <label for="fresh-produce" class="radio-btn"
+                      ><input
+                        type="radio"
+                        class="radio-cat d-none"
+                        id="fresh-produce"
+                        name="category-radio"
+                      /><span>Fresh Produce</span></label
+                    >
+                  </div>
+                </li>
+                <li class="option" value="">
+                  <div class="option-text">
+                    <label for="fruits&vegetables" class="radio-btn">
+                      <input
+                        type="radio"
+                        class="radio-cat d-none"
+                        id="fruits&vegetables"
+                        name="category-radio"
+                      /><span>Fruits & Vegetables </span></label
+                    >
+                  </div>
+                </li>
+                <li class="option" value="">
+                  <div class="option-text">
+                    <label for="household" class="radio-btn"
+                      ><input
+                        type="radio"
+                        class="radio-cat d-none"
+                        id="household"
+                        name="category-radio"
+                      /><span>Household</span></label
+                    >
+                  </div>
+                </li>
+                <li class="option" value="">
+                  <div class="option-text">
+                    <label for="miscellaneous" class="radio-btn"
+                      ><input
+                        type="radio"
+                        class="radio-cat d-none"
+                        id="miscellaneous"
+                        name="category-radio"
+                      /><span>Miscellaneous</span></label
+                    >
+                  </div>
+                </li>
+                <li class="option" value="">
+                  <div class="option-text">
+                    <label for="oil" class="radio-btn"
+                      ><input
+                        type="radio"
+                        class="radio-cat d-none"
+                        id="oil"
+                        name="category-radio"
+                      /><span>Oil</span></label
+                    >
+                  </div>
+                </li>
+                <li class="option" value="">
+                  <div class="option-text">
+                    <label for="provisions" class="radio-btn"
+                      ><input
+                        type="radio"
+                        class="radio-cat d-none"
+                        id="provisions"
+                        name="category-radio"
+                      /><span>Provisions</span></label
+                    >
+                  </div>
+                </li>
+                <li class="option" value="">
+                  <div class="option-text">
+                    <label for="spices" class="radio-btn"
+                      ><input
+                        type="radio"
+                        class="radio-cat d-none"
+                        id="spices"
+                        name="category-radio"
+                      /><span>Spices</span></label
+                    >
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="ispinner">
+              <div class="ispinner-blade"></div>
+              <div class="ispinner-blade"></div>
+              <div class="ispinner-blade"></div>
+              <div class="ispinner-blade"></div>
+              <div class="ispinner-blade"></div>
+              <div class="ispinner-blade"></div>
+              <div class="ispinner-blade"></div>
+              <div class="ispinner-blade"></div>
+            </div>
+            <div class="clear-button" onclick="clearSearch(event)">
+              <i class="fa-solid fa-circle-xmark"></i>
+            </div>
+
+            <button class="btn border-0" type="submit">
+              <i class="fa-solid fa-magnifying-glass text-light"></i>
+            </button>
+          </form>
+          <div class="search-content bg-light"></div>
+        </div>
+        <div action="" id="right-box" class="d-flex justify-content-end">
+          <div class="user">
+            <a href="./signUp.html" class="signing-btn d-none d-xl-block"
+              >Login / SignUp</a
+            >
+            <!-- Should display User Icon or picture if logged in -->
+            <div class="user-icon text-white fs-6 d-block d-xl-none">
+              <i class="fa-solid fa-user"></i>
+            </div>
+          </div>
+          <div class="shopping mx-sm-4 d-flex align-items-center">
+            <div class="favorite">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="cart-list ms-xxl-4 ms-3">
+              <i class="fa-solid fa-bag-shopping"></i>
+              <span class="item-count">14</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="position-relative search-block mx-auto d-none">
+      <form
+        class="d-flex p-0 rounded-2 my-2 overflow-hidden search-form"
+        role="search"
+        id="search2"
+      >
+        <input
+          class="form-control outline-none rounded-0 border-0 me-0 shadow-none search-input"
+          type="search"
+          onfocus="activeSearch()"
+          onblur=" removeShadow()"
+          placeholder="Search Products"
+          aria-label="Search"
+        />
+        <div class="select-menu border-0 text-center" id="category-md">
+          <div
+            class="select-btn px-3 me-auto"
+            onclick="toggleClass()"
+            id="catplaceholder2"
+          >
+            <span class="sBtn-text option-placeholder">All Categories</span>
+            <i class="fa-solid fa-angle-down ms-1"></i>
+          </div>
+          <ul class="options z-2" id="optionslist">
+            <li class="option" value="">
+              <div class="option-text">
+                <label for="all-categories2" class="radio-btn"
+                  ><input
+                    type="radio"
+                    class="radio-cat d-none"
+                    id="all-categories2"
+                    name="category-radio"
+                    checked
+                  /><span>All Categories</span></label
+                >
+              </div>
+            </li>
+            <li class="option" value="">
+              <div class="option-text">
+                <label for="body-care2" class="radio-btn"
+                  ><input
+                    type="radio"
+                    class="radio-cat d-none"
+                    id="body-care2"
+                    name="category-radio"
+                  /><span>Body Care</span></label
+                >
+              </div>
+            </li>
+            <li class="option" value="">
+              <div class="option-text">
+                <label for="drinks2" class="radio-btn"
+                  ><input
+                    type="radio"
+                    class="radio-cat d-none"
+                    id="drinks2"
+                    name="category-radio"
+                  /><span>Drinks</span></label
+                >
+              </div>
+            </li>
+            <li class="option" value="">
+              <div class="option-text">
+                <label for="ethnic-delicacies2" class="radio-btn"
+                  ><input
+                    type="radio"
+                    class="radio-cat d-none"
+                    id="ethnic-delicacies2"
+                    name="category-radio"
+                  /><span> Ethnic Delicacies</span>
+                </label>
+              </div>
+            </li>
+            <li class="option" value="">
+              <div class="option-text">
+                <label for="fish&seafood2" class="radio-btn"
+                  ><input
+                    type="radio"
+                    class="radio-cat d-none"
+                    id="fish&seafood2"
+                    name="category-radio"
+                  /><span>Fish & Seafood</span></label
+                >
+              </div>
+            </li>
+            <li class="option" value="">
+              <div class="option-text">
+                <label for="flour2" class="radio-btn"
+                  ><input
+                    type="radio"
+                    class="radio-cat d-none"
+                    id="flour2"
+                    name="category-radio"
+                  /><span>Flour</span></label
+                >
+              </div>
+            </li>
+            <li class="option" value="">
+              <div class="option-text">
+                <label for="fresh-produce2" class="radio-btn"
+                  ><input
+                    type="radio"
+                    class="radio-cat d-none"
+                    id="fresh-produce2"
+                    name="category-radio"
+                  /><span>Fresh Produce</span></label
+                >
+              </div>
+            </li>
+            <li class="option" value="">
+              <div class="option-text">
+                <label for="fruits&vegetables2" class="radio-btn">
+                  <input
+                    type="radio"
+                    class="radio-cat d-none"
+                    id="fruits&vegetables2"
+                    name="category-radio"
+                  /><span>Fruits & Vegetables </span></label
+                >
+              </div>
+            </li>
+            <li class="option" value="">
+              <div class="option-text">
+                <label for="household2" class="radio-btn"
+                  ><input
+                    type="radio"
+                    class="radio-cat d-none"
+                    id="household2"
+                    name="category-radio"
+                  /><span>Household</span></label
+                >
+              </div>
+            </li>
+            <li class="option" value="">
+              <div class="option-text">
+                <label for="miscellaneous2" class="radio-btn"
+                  ><input
+                    type="radio"
+                    class="radio-cat d-none"
+                    id="miscellaneous2"
+                    name="category-radio"
+                  /><span>Miscellaneous</span></label
+                >
+              </div>
+            </li>
+            <li class="option" value="">
+              <div class="option-text">
+                <label for="oil2" class="radio-btn"
+                  ><input
+                    type="radio"
+                    class="radio-cat d-none"
+                    id="oil2"
+                    name="category-radio"
+                  /><span>Oil</span></label
+                >
+              </div>
+            </li>
+            <li class="option" value="">
+              <div class="option-text">
+                <label for="provisions2" class="radio-btn"
+                  ><input
+                    type="radio"
+                    class="radio-cat d-none"
+                    id="provisions2"
+                    name="category-radio"
+                  /><span>Provisions</span></label
+                >
+              </div>
+            </li>
+            <li class="option" value="">
+              <div class="option-text">
+                <label for="spices2" class="radio-btn"
+                  ><input
+                    type="radio"
+                    class="radio-cat d-none"
+                    id="spices2"
+                    name="category-radio"
+                  /><span>Spices</span></label
+                >
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="clear-button" onclick="clearSearch(event)">
+          <i class="fa-solid fa-circle-xmark"></i>
+        </div>
+        <div class="ispinner">
+          <div class="ispinner-blade"></div>
+          <div class="ispinner-blade"></div>
+          <div class="ispinner-blade"></div>
+          <div class="ispinner-blade"></div>
+          <div class="ispinner-blade"></div>
+          <div class="ispinner-blade"></div>
+          <div class="ispinner-blade"></div>
+          <div class="ispinner-blade"></div>
+        </div>
+
+        <button
+          class="border-0 bg-pry rounded-0 ms-auto px-2 search-btn"
+          type="submit"
+        >
+          <i class="fa-solid fa-magnifying-glass text-light"></i>
+        </button>
+      </form>
+      <div class="search-content bg-light"></div>
+    </div>
+    <nav class="d-flex align-items-center bg-body-tertiary main-nav">
+      <ul class="d-flex justify-content-center mx-auto ps-0 mb-0">
+        <li><a href="#" class="py-3 px-3 nav_item">Home </a></li>
+        <li><a href="#" class="py-3 px-3 nav_item">Express Order</a></li>
+        <li><a href="#" class="py-3 px-3 nav_item">Best Sellers</a></li>
+        <li><a href="#" class="py-3 px-3 nav_item">All Products</a></li>
+        <li><a href="#" class="py-3 px-3 nav_item">Browse Store </a></li>
+        <li>
+          <a href="#`" class="py-3 px-3 list nav_item">More</a>
+          <ul class="d-none">
+            <li><a href="#">About TAM </a></li>
+            <li><a href="#">How TAM Works</a></li>
+            <li><a href="#">Track Your TAM Order</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Suggest A Product</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <div
+      class="offcanvas offcanvas-start side-bar"
+      tabindex="-1"
+      id="menu-sm"
+      aria-labelledby="menuLabel"
+    >
+      <div class="offcanvas-header py-2 mx-2 mb-2">
+        <button
+          type="button"
+          class="btn-close text-reset outline-none border-0 shadow-none"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+        <div class="position-relative">
+          <a
+            class="navbar-brand logo side-logo me-0 position-relative h-100"
+            href="#"
+            ><img src="assets/imageedit_5_7514242132.png" width="100px" />
+          </a>
+        </div>
+      </div>
+      <div class="offcanvas-body px-0">
+        <div>
+          <section class="mb-4">
+            <h3 class="txt-green border-bottom border-2 pb-2 mb-2 mx-2">
+              Menu
+            </h3>
+            <nav class="">
+              <ul class="d-flex flex-column justify-content-start ps-0 mb-0">
+                <li>
+                  <a href="#" class="py-3 px-5 nav_item"
+                    ><i class="fa-solid fa-house me-3"></i>Home
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="py-3 px-5 nav_item"
+                    ><i class="fa-solid fa-gift me-3"></i>Express Order</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="py-3 px-5 nav_item"
+                    ><i class="fa-solid fa-star me-3"></i>Best Sellers</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="py-3 px-5 nav_item"
+                    ><i class="fa-solid fa-cart-shopping me-3"></i>All
+                    Products</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="py-3 px-5 nav_item"
+                    ><i class="fa-solid fa-magnifying-glass me-3"></i>Browse
+                    Store
+                  </a>
+                </li>
+                <li class="list" tabindex="0" onblur="timeLeave()">
+                  <a
+                    href="#`"
+                    class="py-3 drop-list px-5 nav_item d-flex justify-content-between align-items-center"
+                    onclick="addSubList()"
+                    ><span
+                      ><i class="d-inline-block fa-solid fa-ellipsis me-3"></i
+                      >More</span
+                    ><i class="fa-solid fa-angle-right"></i
+                  ></a>
+                  <ul class="ms-5 d-flex flex-column overflow-auto">
+                    <li><a href="#" class="py-2 d-block">About TAM</a></li>
+                    <li><a href="#" class="py-2 d-block">How TAM Works</a></li>
+                    <li>
+                      <a href="#" class="py-2 d-block">Track Your TAM Order</a>
+                    </li>
+                    <li>
+                      <a href="#" class="py-2 d-block">Suggest A Product</a>
+                    </li>
+                    <li>
+                      <a href="#side-support" class="py-2 d-block">Support</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </section>
+          <section class="d-none category-sec">
+            <h3 class="txt-green border-bottom border-2 pb-2 mb-2 mx-2">
+              Categories
+            </h3>
+            <ul class="options list-unstyled z-2">
+              <li class="option" value="">
+                <label for="body-care" class="radio-btn px-5 txt-gray"
+                  ><input
+                    type="radio"
+                    class="radio-cat d-none"
+                    id="body-care"
+                    name="category-radio"
+                  /><span class="d-inline-flex align-items-center"
+                    ><i class="fas fa-tint"></i> Body Care</span
+                  ></label
+                >
+              </li>
+              <li class="option" value="">
+                <label for="drinks" class="radio-btn px-5 txt-gray"
+                  ><input
+                    type="radio"
+                    class="radio-cat d-none"
+                    id="drinks"
+                    name="category-radio"
+                  /><span class="d-inline-flex align-items-center"
+                    ><i class="fas fa-glass-martini"></i> Drinks</span
+                  ></label
+                >
+              </li>
+              <li class="option" value="">
+                <label for="ethnic-delicacies" class="radio-btn px-5 txt-gray"
+                  ><input
+                    type="radio"
+                    class="radio-cat d-none"
+                    id="ethnic-delicacies"
+                    name="category-radio"
+                  /><span class="d-inline-flex align-items-center"
+                    ><i class="fas fa-drumstick-bite"></i> Ethnic
+                    Delicacies</span
+                  >
+                </label>
+              </li>
+              <li class="option" value="">
+                <label for="fish&seafood" class="radio-btn px-5 txt-gray"
+                  ><input
+                    type="radio"
+                    class="radio-cat d-none"
+                    id="fish&seafood"
+                    name="category-radio"
+                  /><span class="d-inline-flex align-items-center"
+                    ><i class="fas fa-fish"></i> Fish & Seafood</span
+                  ></label
+                >
+              </li>
+              <li class="option" value="">
+                <label for="flour" class="radio-btn px-5 txt-gray"
+                  ><input
+                    type="radio"
+                    class="radio-cat d-none"
+                    id="flour"
+                    name="category-radio"
+                  /><span class="d-inline-flex align-items-center"
+                    ><i class="bx bxs-flask"></i>
+
+                    Flour</span
+                  ></label
+                >
+              </li>
+              <li class="option" value="">
+                <label for="fresh-produce" class="radio-btn px-5 txt-gray"
+                  ><input
+                    type="radio"
+                    class="radio-cat d-none"
+                    id="fresh-produce"
+                    name="category-radio"
+                  /><span class="d-inline-flex align-items-center"
+                    ><i class="fas fa-leaf"></i> Fresh Produce</span
+                  ></label
+                >
+              </li>
+              <li class="option" value="">
+                <label for="fruits&vegetables" class="radio-btn px-5 txt-gray">
+                  <input
+                    type="radio"
+                    class="radio-cat d-none"
+                    id="fruits&vegetables"
+                    name="category-radio"
+                  /><span class="d-inline-flex align-items-center"
+                    ><i class="fas fa-apple-alt"></i> Fruits & Vegetables
+                  </span></label
+                >
+              </li>
+              <li class="option" value="">
+                <label for="household" class="radio-btn px-5 txt-gray"
+                  ><input
+                    type="radio"
+                    class="radio-cat d-none"
+                    id="household"
+                    name="category-radio"
+                  /><span class="d-inline-flex align-items-center"
+                    ><i class="fas fa-home"></i> Household</span
+                  ></label
+                >
+              </li>
+              <li class="option" value="">
+                <label for="miscellaneous" class="radio-btn px-5 txt-gray"
+                  ><input
+                    type="radio"
+                    class="radio-cat d-none"
+                    id="miscellaneous"
+                    name="category-radio"
+                  /><span class="d-inline-flex align-items-center"
+                    ><i class="fas fa-ellipsis-h"></i> Miscellaneous</span
+                  ></label
+                >
+              </li>
+              <li class="option" value="">
+                <label for="oil" class="radio-btn px-5 txt-gray"
+                  ><input
+                    type="radio"
+                    class="radio-cat d-none"
+                    id="oil"
+                    name="category-radio"
+                  /><span class="d-inline-flex align-items-center"
+                    ><i class="fas fa-oil-can"></i> Oil</span
+                  ></label
+                >
+              </li>
+              <li class="option" value="">
+                <label for="provisions" class="radio-btn px-5 txt-gray"
+                  ><input
+                    type="radio"
+                    class="radio-cat d-none"
+                    id="provisions"
+                    name="category-radio"
+                  /><span class="d-inline-flex align-items-center"
+                    ><i class="fas fa-utensils"></i> Provisions</span
+                  ></label
+                >
+              </li>
+              <li class="option" value="">
+                <label
+                  for="spices"
+                  class="radio-btn px-5 txt-gray"
+                  class="radio-btn"
+                  ><input
+                    type="radio"
+                    class="radio-cat d-none"
+                    id="spices"
+                    name="category-radio"
+                  /><span class="d-inline-flex align-items-center"
+                    ><i class="fas fa-pepper-hot"></i> Spices</span
+                  ></label
+                >
+              </li>
+            </ul>
+          </section>
+          <section class="mb-4">
+            <p class="d-flex justify-content-end align-items-center py-2">
+              <a href="signUp.html" class="btn px-4 fs-5 txt-gray"
+                ><i class="fa-solid fa-arrow-right-to-bracket me-2"></i> Signup
+                / Login
+              </a>
+            </p>
+            <p class="bg-pry">
+              <a
+                href="#"
+                class="btn px-4 fs-6 d-flex align-items-center text-light"
+                id="side-support"
+              >
+                <i class="fa-solid fa-circle-info me-3"></i> Support
+              </a>
+            </p>
+          </section>
+        </div>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
+    </div>
+    <main>
+      <div class="container-fluid mt-4">
+        <div class="swiper">
+          <div class="overlay"></div>
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper position-relative">
+            <!-- Slides -->
+
+            <div class="swiper-slide">
+              <div class="overlay"></div>
+              <a href="http://" class="z-2">
+                <div class="row h-100">
+                  <div class="col-lg-6 d-flex align-items-end">
+                    <div class="description">
+                      <h5>Quality African Groceries</h5>
+                      <p>Delivered to your doorstep</p>
+                      <button
+                        class="animated-btn btn-animation animated-btn-white"
+                      >
+                        ORDER NOW
+                      </button>
+                    </div>
+                  </div>
+                </div></a
+              >
+            </div>
+            <div class="swiper-slide">
+              <div class="overlay"></div>
+              <a href="http://" class="z-2">
+                <div class="row h-100">
+                  <div class="col-lg-6 d-flex align-items-end">
+                    <div class="description">
+                      <h5>The African Market (TAM)</h5>
+                      <p>Quality Food At Your Doorstep.</p>
+                      <button
+                        class="animated-btn btn-animation animated-btn-white"
+                      >
+                        ORDER NOW
+                      </button>
+                    </div>
+                  </div>
+                </div></a
+              >
+            </div>
+            <div class="swiper-slide">
+              <div class="overlay"></div>
+              <a href="http://" class="z-2">
+                <div class="row h-100">
+                  <div class="col-lg-6 d-flex align-items-end">
+                    <div class="description">
+                      <h5>Delivered When You Want</h5>
+                      <p>
+                        Choose when you want your African groceries and we'll
+                        deliver it to your doorstep!
+                      </p>
+                      <button
+                        class="animated-btn btn-animation animated-btn-white"
+                      >
+                        ORDER NOW
+                      </button>
+                    </div>
+                  </div>
+                </div></a
+              >
+            </div>
+            <div class="swiper-slide">
+              <div class="overlay"></div>
+
+              <a href="http://" class="z-2">
+                <div class="row h-100">
+                  <div class="col-lg-6 d-flex align-items-end">
+                    <div class="description">
+                      <h5>Order By 4PM for Same-Day</h5>
+                      <p>Same day delivery available in Houston</p>
+                      <button
+                        class="animated-btn btn-animation animated-btn-white"
+                      >
+                        ORDER NOW
+                      </button>
+                    </div>
+                  </div>
+                </div></a
+              >
+            </div>
+            <div class="swiper-slide">
+              <div class="overlay"></div>
+
+              <a href="http://" class="z-2">
+                <div class="row h-100">
+                  <div class="col-lg-6 d-flex align-items-end">
+                    <div class="description">
+                      <h5>Jollof Recipe. DEIVERED.</h5>
+                      <p>Same day delivery available</p>
+                      <button
+                        class="animated-btn btn-animation animated-btn-white"
+                      >
+                        ORDER NOW
+                      </button>
+                    </div>
+                  </div>
+                </div></a
+              >
+            </div>
+            <div class="swiper-slide">
+              <div class="overlay"></div>
+
+              <a href="http://" class="z-2">
+                <div class="row h-100">
+                  <div class="col-lg-6 d-flex align-items-end">
+                    <div class="description">
+                      <h5>Quality African Breakfast</h5>
+                      <p>Start your day with a delicious smile</p>
+                      <button
+                        class="animated-btn btn-animation animated-btn-white"
+                      >
+                        ORDER NOW
+                      </button>
+                    </div>
+                  </div>
+                </div></a
+              >
+            </div>
+            <div class="swiper-slide">
+              <div class="overlay"></div>
+
+              <a href="http://" class="z-2">
+                <div class="row h-100">
+                  <div class="col-lg-6 d-flex align-items-end">
+                    <div class="description">
+                      <h5>Authentic African Ingredients</h5>
+                      <p>
+                        Order from TAM's collection of African spices and
+                        flavours.
+                      </p>
+                      <button
+                        class="animated-btn btn-animation animated-btn-white"
+                      >
+                        ORDER NOW
+                      </button>
+                    </div>
+                  </div>
+                </div></a
+              >
+            </div>
+            <div class="swiper-slide">
+              <div class="overlay"></div>
+
+              <a href="http://" class="z-2">
+                <div class="row h-100">
+                  <div class="col-lg-6 d-flex align-items-end">
+                    <div class="description">
+                      <h5>Smooth Like Butter</h5>
+                      <p>
+                        Order from TAM's collection of organic African shea
+                        creams, oils and other African body care items.
+                      </p>
+                      <button
+                        class="animated-btn btn-animation animated-btn-white"
+                      >
+                        ORDER NOW
+                      </button>
+                    </div>
+                  </div>
+                </div></a
+              >
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <!-- <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div> -->
+
+          <!-- If we need scrollbar -->
+          <!-- <div class="swiper-scrollbar"></div> -->
+        </div>
+        <div class="col-5"></div>
+      </div>
+    </main>
+    <!-- metro UI -->
+    <!-- <script src="https://cdn.korzh.com/metroui/v4/js/metro.min.js"></script> -->
+
+    <!-- bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+      integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+      crossorigin="anonymous"
+    ></script>
+    <!-- swiperjs -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/swiper.js"></script>
+    <script src="./js/ripple.js"></script>
+    <script src="./js/ripple-use.js"></script>
+  </body>
+</html>
+<!-- <div class="product-image-wrap">
+  <figure
+    data-thumb="https://tamhouston.com/wp-content/uploads/2021/07/Birds-Custard-Powder-optim-150x150.jpg"
+    class="woocommerce-product-gallery__image"
+    style="position: relative; overflow: hidden"
+  >
+    <a
+      data-elementor-open-lightbox="no"
+      href="https://i0.wp.com/tamhouston.com/wp-content/uploads/2021/07/Birds-Custard-Powder-optim.jpg?fit=1080%2C1080&amp;ssl=1"
+      ><img
+        width="900"
+        height="900"
+        src="https://i0.wp.com/tamhouston.com/wp-content/uploads/2021/07/Birds-Custard-Powder-optim.jpg?fit=900%2C900&amp;ssl=1"
+        class="wp-post-image wp-post-image"
+        alt=""
+        decoding="async"
+        title="Bird's Custard Powder - optim"
+        data-caption=""
+        data-src="https://i0.wp.com/tamhouston.com/wp-content/uploads/2021/07/Birds-Custard-Powder-optim.jpg?fit=1080%2C1080&amp;ssl=1"
+        data-large_image="https://i0.wp.com/tamhouston.com/wp-content/uploads/2021/07/Birds-Custard-Powder-optim.jpg?fit=1080%2C1080&amp;ssl=1"
+        data-large_image_width="1080"
+        data-large_image_height="1080"
+        srcset="
+          https://i0.wp.com/tamhouston.com/wp-content/uploads/2021/07/Birds-Custard-Powder-optim.jpg?w=1080&amp;ssl=1             1080w,
+          https://i0.wp.com/tamhouston.com/wp-content/uploads/2021/07/Birds-Custard-Powder-optim.jpg?resize=600%2C600&amp;ssl=1    600w,
+          https://i0.wp.com/tamhouston.com/wp-content/uploads/2021/07/Birds-Custard-Powder-optim.jpg?resize=100%2C100&amp;ssl=1    100w,
+          https://i0.wp.com/tamhouston.com/wp-content/uploads/2021/07/Birds-Custard-Powder-optim.jpg?resize=900%2C900&amp;ssl=1    900w,
+          https://i0.wp.com/tamhouston.com/wp-content/uploads/2021/07/Birds-Custard-Powder-optim.jpg?resize=64%2C64&amp;ssl=1       64w,
+          https://i0.wp.com/tamhouston.com/wp-content/uploads/2021/07/Birds-Custard-Powder-optim.jpg?resize=300%2C300&amp;ssl=1    300w,
+          https://i0.wp.com/tamhouston.com/wp-content/uploads/2021/07/Birds-Custard-Powder-optim.jpg?resize=1024%2C1024&amp;ssl=1 1024w,
+          https://i0.wp.com/tamhouston.com/wp-content/uploads/2021/07/Birds-Custard-Powder-optim.jpg?resize=150%2C150&amp;ssl=1    150w,
+          https://i0.wp.com/tamhouston.com/wp-content/uploads/2021/07/Birds-Custard-Powder-optim.jpg?resize=768%2C768&amp;ssl=1    768w,
+          https://i0.wp.com/tamhouston.com/wp-content/uploads/2021/07/Birds-Custard-Powder-optim.jpg?resize=30%2C30&amp;ssl=1       30w,
+          https://i0.wp.com/tamhouston.com/wp-content/uploads/2021/07/Birds-Custard-Powder-optim.jpg?resize=60%2C60&amp;ssl=1       60w
+        "
+        sizes="(max-width: 900px) 100vw, 900px" /></a
+    >
+  </figure>
+</div> -->
