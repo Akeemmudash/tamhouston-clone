@@ -3,7 +3,6 @@ const swiper = new Swiper(".swiper", {
   fadeEffect: { crossFade: true },
   direction: "horizontal",
   effect: "fade",
-
   autoplay: {
     delay: 4000,
     disableOnInteraction: true,
@@ -14,6 +13,7 @@ const swiper = new Swiper(".swiper", {
     el: ".swiper-pagination",
   },
   slidesPerView: 1,
+
   // navigation: {
   //      nextEl: ".swiper-button-next",
   //      prevEl: ".swiper-button-prev",

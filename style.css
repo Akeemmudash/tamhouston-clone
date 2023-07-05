@@ -47,7 +47,7 @@ button:active {
 }
 .overlay {
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.55);
   width: 100%;
   height: 100%;
 }
@@ -647,28 +647,28 @@ ul a {
 .swiper-pagination-bullet-active {
   background-color: var(--lighter-green);
 }
-.swiper-slide:nth-of-type(2) {
+.swiper-slide:nth-of-type(1) {
   background-image: url("https://i0.wp.com/tamhouston.com/wp-content/uploads/2022/03/tam-banner-a4.png?fit=1134%2C498&ssl=1");
 }
-.swiper-slide:nth-of-type(3) {
+.swiper-slide:nth-of-type(2) {
   background-image: url("https://i0.wp.com/tamhouston.com/wp-content/uploads/2021/09/tam-quality-african-groceries-on-kitchen-counter-optim.jpg?fit=1920%2C1077&ssl=1");
 }
-.swiper-slide:nth-of-type(4) {
+.swiper-slide:nth-of-type(3) {
   background-image: url("https://i0.wp.com/tamhouston.com/wp-content/uploads/2021/09/tam-doorstep-delivery-handoff-landscape-optim.jpg?fit=1920%2C1110&ssl=1");
 }
-.swiper-slide:nth-of-type(5) {
+.swiper-slide:nth-of-type(4) {
   background-image: url("https://i0.wp.com/tamhouston.com/wp-content/uploads/2022/03/tam-banner-a14.png?fit=1134%2C498&ssl=1");
 }
-.swiper-slide:nth-of-type(6) {
+.swiper-slide:nth-of-type(5) {
   background-image: url("https://i0.wp.com/tamhouston.com/wp-content/uploads/2021/03/jollof-pexels-square.jpg?fit=1500%2C1500&ssl=1");
 }
-.swiper-slide:nth-of-type(7) {
+.swiper-slide:nth-of-type(6) {
   background-image: url("https://i0.wp.com/tamhouston.com/wp-content/uploads/2022/06/tam22-provisions-1.jpg?fit=1200%2C1200&ssl=1");
 }
-.swiper-slide:nth-of-type(8) {
+.swiper-slide:nth-of-type(7) {
   background-image: url("https://i0.wp.com/tamhouston.com/wp-content/uploads/2022/06/obiji-peppers-and-ikwe-optim.jpeg?fit=1889%2C1190&ssl=1");
 }
-.swiper-slide:nth-of-type(9) {
+.swiper-slide:nth-of-type(8) {
   background-image: url("https://i0.wp.com/tamhouston.com/wp-content/uploads/2022/03/tam-skin-like-butter-joyful-african-lady-with-short-hair-touching-her-smooth-skin-optim.jpg?fit=2250%2C1500&ssl=1");
 }
 
@@ -693,14 +693,14 @@ ul a {
 }
 .description h5 {
   font-weight: 700;
-  font-size: 45px;
+  font-size: calc(32px + 0.8vw);
 }
 .description p {
-  font-size: 23px;
+  font-size: calc(13px + 0.5vw);
   font-weight: 500;
-  line-height: 1;
+  line-height: 1.2;
   margin-top: 30px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .animated-btn {
@@ -751,12 +751,17 @@ ul a {
 }
 
 .btn-animation {
-  -webkit-animation: moveInBottom 5s ease-out;
-  animation: moveInBottom 5s ease-out;
+  -webkit-animation: moveInBottom 1s ease-out;
+  animation: moveInBottom 1s ease-out;
   -webkit-animation-fill-mode: backwards;
   animation-fill-mode: backwards;
 }
 
+@media screen and (max-width: 575px) {
+  .description {
+    text-align: center;
+  }
+}
 @-webkit-keyframes moveInBottom {
   0% {
     opacity: 0;
