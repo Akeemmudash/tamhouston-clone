@@ -1,4 +1,4 @@
-const swiper = new Swiper(".swiper", {
+const swiper = new Swiper(".hero-swiper", {
   // Optional parameters
   fadeEffect: { crossFade: true },
   direction: "horizontal",
@@ -14,10 +14,7 @@ const swiper = new Swiper(".swiper", {
   },
   slidesPerView: 1,
 
-  // navigation: {
-  //      nextEl: ".swiper-button-next",
-  //      prevEl: ".swiper-button-prev",
-  //  },
+  //
 
   // Navigation arrows
 
@@ -30,3 +27,27 @@ const swiper = new Swiper(".swiper", {
 // if(swiperBlockIsblur){
 
 // }
+//Another carousel
+
+const topCatSwiper = new Swiper(".top-cat-swiper", {
+  slidesPerView: 2,
+  spaceBetween: 10,
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 30,
+    },
+    1024: {
+      slidesPerView: 5,
+      spaceBetween: 40,
+    },
+  },
+  navigation: {
+    nextEl: ".next-btn",
+    prevEl: ".prev-btn",
+  },
+});
