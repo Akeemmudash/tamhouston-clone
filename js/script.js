@@ -159,6 +159,12 @@ function clearSearch(event) {
 // }
 
 // hamburger button
+const tooltipTriggerList = document.querySelectorAll(
+  '[data-bs-toggle="tooltip"]'
+);
+const tooltipList = [...tooltipTriggerList].map(
+  (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+);
 
 function openNav() {
   const hamBtn = document.querySelector("#nav-icon1");
